@@ -58,7 +58,6 @@ async function scrapeAO3(pairing: string, maxPages = 5) {
 }
 
 // ---------- FANFICTION.NET SCRAPER (puppeteer) ----------
-// ---------- FANFICTION.NET SCRAPER (puppeteer) ----------
 async function scrapeFFNet(pairing: string, maxPages = 1) {
   const collected: { title: string; link: string; summary: string }[] = [];
   const search = pairing.replace(/ /g, "+");
