@@ -25,7 +25,7 @@ const client = new Client({
   ],
 });
 
-// ---------- AO3 SCRAPER ----------
+// ---------- AO3 SCRAPER HERE ----------
 async function scrapeAO3(pairing: string, maxPages = 5) {
   const collected: { title: string; link: string; summary: string }[] = [];
   const search = pairing.replace(/ /g, "+");
@@ -57,7 +57,7 @@ async function scrapeAO3(pairing: string, maxPages = 5) {
   return collected;
 }
 
-// ---------- FANFICTION.NET SCRAPER (puppeteer) ----------
+// ---------- FANFICTION.NET SCRAPER HERE(puppeteer) ----------
 async function scrapeFFNet(pairing: string, maxPages = 1) {
   const collected: { title: string; link: string; summary: string }[] = [];
   const search = pairing.replace(/ /g, "+");
